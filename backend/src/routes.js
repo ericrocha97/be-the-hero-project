@@ -9,6 +9,7 @@ const routes = express.Router();
 
 routes.get("/ongs", OngController.index);
 routes.post("/ongs", OngController.create);
+routes.delete("/ongs/:id", OngController.delete);
 
 routes.post("/session", SessionController.store);
 

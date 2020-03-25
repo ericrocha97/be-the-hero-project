@@ -23,5 +23,14 @@ module.exports = {
         });
 
         return response.json({ id });
+    },
+    async delete(request, response) {
+        const { id } = request.params;
+        
+        await connection("ongs")
+            .where("id", id)
+            .delete();
+
+        return response.status(204).send();
     }
 };
