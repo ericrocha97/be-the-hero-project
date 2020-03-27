@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Be The Hero - Project",
+    "slug": "betheheroproject",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E02041"
+    },
+    "primaryColor":"#E02041",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.ericrocha.betheheroproject",
+      "buildNumber": "1.0.0"
+    },
+    "android":{
+      "package": "dev.ericrocha.betheheroproject",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#E02041"
+      }
+    },
+    "androidStatusBar": {
+
+      "barStyle": "dark-content",
+  
+      "backgroundColor": "#E02041"
+    },
+    "androidNavigationBar": {
+
+      "barStyle": "dark-content",
+  
+      "backgroundColor": "#E02041"
+    }
+  }
+}
