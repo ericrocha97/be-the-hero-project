@@ -17,6 +17,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#E02041"
     },
+    "githubUrl":"https://github.com/ericrocha97/be-the-hero-mobile",
     "primaryColor":"#E02041",
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -35,18 +36,6 @@
       "adaptiveIcon": {
         "backgroundColor": "#E02041"
       }
-    },
-    "androidStatusBar": {
-
-      "barStyle": "dark-content",
-  
-      "backgroundColor": "#E02041"
-    },
-    "androidNavigationBar": {
-
-      "barStyle": "dark-content",
-  
-      "backgroundColor": "#E02041"
     }
   }
 }
