@@ -10,6 +10,24 @@
 ### ✨ [Demonstração](https://bethehero.ericrocha.dev/)
 ### 📱 [Aplicação Android](https://go.aws/3bGDPIh)
 
+## Tecnologias
+* NodeJs
+* Knex
+* Celebrate
+* Supertest
+* ReactJs
+* Axios
+* React-Currency-Input
+* React-Input-Mask
+* React-Native
+* Expo
+* Expo-Mail-Composer
+
+## Screenshot
+
+### 💻 [Outras telas](./Imagens-Projeto)
+![](./Imagens-Projeto/Web-Ong-Home.png)
+
 ## Autor
 
 👤 **Eric Rocha**
