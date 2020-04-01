@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to Be the hero - Project 👋</h1>
 <p>
   <a href="https://twitter.com/Eric\_\_Rocha" target="_blank">
-    <img alt="Twitter: Eric\_\_Rocha" src="https://img.shields.io/twitter/follow/Eric\_\_Rocha.svg?style=social" />
+    <img alt="Twitter: Eric__Rocha" src="https://img.shields.io/twitter/follow/Eric__Rocha.svg?style=social" />
   </a>
 </p>
 
