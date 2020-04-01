@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native';
+import { View, FlatList, Image, Text, TouchableOpacity, RefreshControl } from 'react-native';
 
 import api from '../../services/api';
 
@@ -9,11 +9,25 @@ import styles from './styles';
 
 import logoImg from '../../assets/logo.png';
 
+function wait(timeout) {
+  return new Promise(resolve => {
+    setTimeout(resolve, timeout);
+  });
+}
+
 export default function Incidents() {
   const [incidents, setIncidents] = useState([]);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
+
+  const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    setIncidents([]);
+    loadIncidents();
+    wait(2000).then(() => setRefreshing(false));
+  }, [refreshing]);
 
 
   const navigation = useNavigation();
@@ -65,6 +79,9 @@ export default function Incidents() {
         showsVerticalScrollIndicator={false}
         onEndReached={loadIncidents}
         onEndReachedThreshold={0.2}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
         renderItem={({ item: incident  }) => (
           <View style={styles.incident}>
             <Text style={styles.incidentProperty}>ONG:</Text>
